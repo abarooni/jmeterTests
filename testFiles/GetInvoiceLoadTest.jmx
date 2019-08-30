@@ -106,7 +106,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">http://po-app.pool.c4-dev.chromeriver.com/po-app/</stringProp>
+          <stringProp name="HTTPSampler.path">http://po-app.pool.${__P(host,c4-dev)}.chromeriver.com/po-app/</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -258,7 +258,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">po-app.pool.c4-dev.chromeriver.com</stringProp>
+          <stringProp name="HTTPSampler.domain">po-app.pool.${__P(host,c4-dev)}.chromeriver.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -362,7 +362,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">po-app.pool.c4-dev.chromeriver.com</stringProp>
+          <stringProp name="HTTPSampler.domain">po-app.pool.${__P(host,c4-dev)}.chromeriver.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
